@@ -1,9 +1,9 @@
 'use strict';
 
-var is = require('is'),
-    prequire = require('parent-require'),
-    mongodb = prequire('mongodb'),
-    MongoClient = mongodb.MongoClient;
+const is = require('is'),
+      prequire = require('parent-require'),
+      mongodb = prequire('mongodb'),
+      MongoClient = mongodb.MongoClient;
 
 module.exports = function($opts) {
     var enabled = is.defined($opts.enabled) ? $opts.enabled : true,
